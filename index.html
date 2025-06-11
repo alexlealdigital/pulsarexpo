@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WebAR Pulsar Expo</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.5/dist/mindar-image-aframe.prod.js"></script> 
+    <style>
+        body, html { margin: 0; overflow: hidden; }
+    </style>
+</head>
+<body>
+    <a-scene mindar-image="imageTargetSrc: https://alexlealdigital.github.io/pulsarexpo/targets.mind; autoStart: true;" color-space="sRGB" embedded>
+
+        <a-entity camera></a-entity>
+
+        <a-entity mindar-image-target="targetIndex: 0">
+            <a-entity gltf-model="https://alexlealdigital.github.io/pulsarexpo/3d01.glb" scale="0.5 0.5 0.5" position="0 0 0"></a-entity>
+        </a-entity>
+
+    </a-scene>
+</body>
+</html>
